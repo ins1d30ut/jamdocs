@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: cms
+  label: content
+  create: all
+  match: "**/*"
+  templates:
+  - documentation-page
 - type: heading
   label: Head
 - type: heading
